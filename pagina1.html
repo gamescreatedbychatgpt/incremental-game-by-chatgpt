@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Button with Upgrades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+        #container {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #number {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        #buttons, #upgrades {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #incrementButton {
+            background-color: #007BFF;
+        }
+        #resetButton {
+            background-color: #dc3545;
+        }
+        #upgradeClickButton {
+            background-color: #28a745;
+        }
+        #upgradeIncrementButton {
+            background-color: #17a2b8;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="number">0</div>
+        <div id="buttons">
+            <button id="incrementButton">Increment</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <div id="upgrades">
+            <button id="upgradeClickButton">Upgrade Clicks (Cost: 10)</button>
+            <button id="upgradeIncrementButton">Upgrade Increment (Cost: 20)</button>
+        </div>
+    </div>
+
+    <script src="archivo.js"></script>
+</body>
+</html>
+
